@@ -147,16 +147,17 @@
         text-shadow: 0px 0px 0px;
         transition-duration: 100ms;
         ">
-        GAY MONKEY SEX
+            Welcome User
         </div>
         <style>
             #announcementBar:hover {
                 transform: scale(1.1);
                 text-shadow: -5px -5px 10px white;
             }
+
             #announcementBar:active {
                 transform: scale(0.9);
-                text-shadow: 0px 0px 10px white ;
+                text-shadow: 0px 0px 10px white;
             }
         </style>
         <!--
@@ -381,6 +382,7 @@
                 <span style="font-size: 1.75vmax; color: transparent;">Beta Tester:</span> <br><br>
 
                 Charlie K (cool hot man!!) <br><br>
+                <span style="font-size: 0.75vmax; color: transparent;">1xGames Is Powered By The 1DotNetwork™</span> <br><br>
             </div>
         </div>
         <style>
@@ -413,6 +415,52 @@
         </script>
     </div>
 
+    <script>
+        if (localStorage.getItem('Background') === undefined && localStorage.getItem('Tab Spoof') === undefined) {
+            localStorage.setItem('Background', 'On')
+            localStorage.setItem('Tab Spoof', 'Off')
+        }
+    </script>
+    <script>
+        switch (localStorage.getItem('Tab Spoof')) {
+            case 'Off':
+                document.title = 'Home'
+                break
+            case 'New Tab':
+                document.title = 'New Tab'
+                break
+            case 'Google drive':
+                document.title = 'Google Drive'
+                break
+            case 'Classlink':
+                document.title = 'Classlink'
+                break
+            case 'Schoology':
+                document.title = 'Home | Schoology'
+                break
+            case 'Google':
+                document.title = 'Google'
+                break
+            case 'Google docs':
+                document.title = 'Google Docs'
+                break
+            case 'Sora':
+                document.title = 'Sora'
+                break
+            case 'Google classroom':
+                document.title = 'Google Classroom'
+                break
+            case 'Youtube':
+                document.title = 'YouTube'
+                break
+            case 'GoGaurdian':
+                document.title = 'blocked.gogauardian.com/?ctx=fashgflhksgafabskjkhwebjkbssafashkfdbkebljkhgbfhjklbvahjlfgajhsfgjasjgfjhasvghkjfashkfbjghasvfjklhashjcgasjkhfghjkasvfhjasvghfgyjasbfhjasvjkfashjvfghjasvfghjasvfhjgkasjhkfvghasjvfjhasvfjv'
+                break
+            case 'Kahoot':
+                document.title = 'Kahoot'
+                break
+        }
+    </script>
     <script src="./javascript/index.js"></script>
     <script src="./javascript/canvas.js"></script>
 </body>
